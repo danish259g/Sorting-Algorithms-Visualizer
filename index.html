@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Sorting Visualizer</title>
@@ -7,11 +7,35 @@
 </head>
 <body>
     <h1>Sorting Visualizer</h1>
-    <div id="container"></div>
 
-    <div>
-        <button onClick = "init()">Initialize</button>
-        <button onClick = "play()">Play</button>
+    <div id="algButtonsArea">
+        <div id="algButtons">
+            <button class="button" id="bubbleSortBtn" onClick = "">Bubble Sort</button>
+            <button class="button" id="insertionSortBtn" onClick = "">Insertion Sort</button>
+            <button class="button" id="another2" onClick = "">Soon...</button>
+        </div>
+    </div>
+
+    <div id="mainArea">
+
+        <div id="sideBar">
+            <div id="slidersArea">
+                <label for="barsSlider">Bars Number: <span id="barsNumber">10</span></label>
+                <input type="range" id="barsSlider" min="5" max="100" value="10">
+                <label for="speedSlider">Animation Speed</label>
+                <input type="range" id="speedSlider" min="1" max="10" value="5">
+            </div>
+
+
+
+            <div id="mainButtons">
+                <button class="button" id="initBtn" onClick = "init()">Initialize</button>
+                <button class="button" id="playBtn" onClick = "play()">Play</button>
+            </div>
+        </div>
+
+        <div id="stage"></div>
+
     </div>
 
     <script src="script.js"></script>

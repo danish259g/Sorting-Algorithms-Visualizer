@@ -1,7 +1,55 @@
-#container{
-    height: 200px;
+#algButtonsArea{
+    background-color: #B5B1B2;
+    height: 50px;
+    width: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#mainArea{
+    display: flex;
+    align-items: center;
+}
+
+#mainButtons{
+    align-items: center;
+    margin: 10px;
+}
+
+#stage{
+    background-color: #A1CDF4;
+    position: relative;
+    height: 300px;
+    width: 500px;
     display: flex;
     align-items: flex-end;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#sideBar{
+    background-color: #A9AFD1;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#slidersArea{
+    background-color: #B5B1B2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
 }
 
 body{
@@ -11,7 +59,39 @@ body{
 }
 
 .bar{
-    width: 10px;
-    background-color: black;
-    margin: 1px;
+    position: absolute;
+    background-color: #A273A5;
+    transition: all 300ms ease-out;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: white; /* Button color */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease; /* Smooth transition */
+}
+
+.button.clicked {
+    background-color: #b4b4b4; /* Slightly darker shade on click */
+    transform: scale(0.99); /* Slightly scale down the button */
+}
+
+.button.sortClicked {
+    background-color: #e0e0e0; /* Slightly darker shade on click */
+}
+
+.bar.activate {
+    background-color: green;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
